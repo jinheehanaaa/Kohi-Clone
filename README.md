@@ -7,7 +7,7 @@
 
 # Setup
 - [LLVM](https://llvm.org/builds/)
-- [Vulkan SDK](https://www.lunarg.com/vulkan-sdk/) 
+- [Vulkan SDK](https://www.lunarg.com/vulkan-sdk/)
 
 
 # Resources
