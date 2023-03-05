@@ -19,7 +19,7 @@ KAPI  b8 platform_startup(
 // platform_shutdown holds a pointer to platform state
 KAPI void platform_shutdown(platform_state* plat_state);
 
-// platform_pump_messages should continuously loop through application 
+// platform_pump_messages should continuously loop through application
 KAPI b8 platform_pump_messages(platform_state* plat_state);
 
 // Dealing with memory (platform specific)
