@@ -27,10 +27,10 @@ b8 platform_startup(
     i32 y,
     i32 width,
     i32 height) {
-    plat_state->internal_state = malloc(sizeof(internal_state)); // Allocate memory for internal state
-    internal_state *state = (internal_state *)plat_state->internal_state; // by using *state we can access the internal objects like h_instance, hwnd
+    plat_state->internal_state = malloc(sizeof(internal_state));
+    internal_state *state = (internal_state *)plat_state->internal_state;
 
-    state->h_instance = GetModuleHandleA(0); // 0 = Handle to Application that's currently executing this code
+    state->h_instance = GetModuleHandleA(0);
 
     // Setup and register window class.
     HICON icon = LoadIcon(state->h_instance, IDI_APPLICATION);
@@ -121,7 +121,6 @@ void platform_shutdown(platform_state *plat_state) {
     }
 }
 
-// platform_pump_messages is called within main application loop
 b8 platform_pump_messages(platform_state *plat_state) {
     MSG message;
     while (PeekMessageA(&message, NULL, 0, 0, PM_REMOVE)) {
@@ -140,7 +139,6 @@ void platform_free(void *block, b8 aligned) {
     free(block);
 }
 
-// set entire block of memory to 0 (zero-out memory)
 void *platform_zero_memory(void *block, u64 size) {
     return memset(block, 0, size);
 }
