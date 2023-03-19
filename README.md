@@ -9,6 +9,15 @@
 # Setup
 - [LLVM](https://llvm.org/builds/)
 - [Vulkan SDK](https://www.lunarg.com/vulkan-sdk/)
+- sudo apt-get install libx11-dev
+- sudo apt-get install libxkbcommon-x11-dev
+- sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev libx11-xcb-dev libxcb-cursor-dev libxcb-icccm4-dev
+
+# CMD
+- CTRL + SHIFT + B for build
+
+# Diagram
+- [Draw.io](https://drive.google.com/file/d/1LEIjHN8-n1zGgTx_hBYbLMd8pObOk-aq/view?usp=sharing)
 
 # TODO
 ## Linux
